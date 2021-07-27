@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post job form</title>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+body			{		background-image: url("main_background.jpg");
+						background-size:     cover;                
+						background-repeat:   no-repeat;
+				}
+	
+body,html		{		height:97%;	}
+	
+div.parent		{
+						padding:30px 30px;
+						width:50%;
+						margin:auto;
+						height:90%;
+						
+						background-color:#ffb3b3;
+						
+						border-style:solid;
+						border-color:#001234;
+				}
+
+div.child		{		
+						text-align:left;
+						margin:22% 0 10% 10%;
+						float:right;
+						width:65%;
+						
+						
+	
+						<!--border-style:solid;
+						border-color:#001234;-->
+
+				}
+
+span 			{
+						font-size:40pt;
+						font-family:lobster;
+				}
+input[type="text"],textarea {
+						padding:8px 15px;
+						background:rgba(20, 100, 40, 0.2);
+						border:0px solid #dbdbdb;
+					}
+input[type="image"] {
+						position:relative;
+						padding:6px 15px;
+						
+						height:15px;
+						width:auto;
+						border:2px solid #207cca;
+						background-image: url (search_icon.png) no-repeat;
+				}	
+input[type="button"]:hover  {
+						background-color:#fafafa;
+						color:#207cca;
+				}
+				
+input[placeholder], [placeholder], *[placeholder] {
+						color: red;
+				}
+label			{
+						margin:0 5px;
+				}
+
+input			{
+						margin: 5px;
+				}
+				
+				
+</style>
+</head>
+<body>
+<div class="parent">
+<span style="text-align:center;font-family:lobster;font-size:40;">Job posting form</span>
+<form action="add_job.php" method="get">
+	<label>Job Title:</label><input type="text" name="jobTitle" ><br>
+	<label>Job Description:</label><textarea rows="2" cols="19" name="description"></textarea><br>
+	<label>Job Hours:</label><input type="text" name="hours" ><br>
+	<label>Job Pay ($/hr):</label><input type="text" name="pay" ><br>
+	<label>Keywords (comma separated):</label><input type="text" name="keywords" ><br>
+	<label>Physical requirements:</label><input type="text" name="physicalReqs" ><br>
+	<label>Street Address:</label><input type="text" name="streetAddress" ><br>
+	<label>Zipcode:</label><input type="text" name="zipcode" ><br>
+	<label>Contact number:</label><input type="text" name="number" ><br>
+	<label>Employer type (company/individual):</label><input type="text" name="type" ><br>
+	<label>Name:</label><input type="text" name="name" ><br>
+	<input type="Submit" name="submit" >
+	
+</form>
+</div>
+</body>
+
+</html>

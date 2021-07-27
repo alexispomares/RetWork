@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+body			{		background-image: url("main_background.jpg");
+						background-size:     cover;                
+						background-repeat:   no-repeat;
+				}
+	
+body,html		{		height:98%;	}
+	
+div.parent		{
+						float:left;
+						width:40%;
+						height:100%;
+						
+						<!--border-style:solid;
+						border-color:#001234;-->
+				}
+
+div.child		{		
+						text-align:left;
+						margin:22% 0 10% 10%;
+						float:right;
+						width:65%;
+						
+						
+	
+						<!--border-style:solid;
+						border-color:#001234;-->
+
+				}
+
+span 			{
+						font-size:40pt;
+						font-family:lobster;
+				}
+input[type="text"] {
+						padding:8px 15px;
+						background:rgba(20, 100, 40, 0.2);
+						border:0px solid #dbdbdb;
+					}
+input[type="image"] {
+						position:relative;
+						padding:6px 15px;
+						
+						height:15px;
+						width:auto;
+						border:2px solid #207cca;
+						background-image: url (search_icon.png) no-repeat;
+				}	
+input[type="button"]:hover  {
+						background-color:#fafafa;
+						color:#207cca;
+				}
+				
+				
+img				{
+					height:100px;
+					width:auto;
+}
+</style>
+</head>
+<body>
+<div class="parent">
+<div class="child">
+
+<img id="logo" src="retwork_artwork2.png" alt="RetWork Logo">
+<form action="searchResults.php" method="get">
+	<div style="display:inline-block;"><input style="float:left" type="text" placeholder="Search for jobs here..." name="cat" required>
+	<input style="float:left" src="search_icon.png" type="image"></div>
+	<div ><a style="font-size:25px;" href="addJobForm.html">Post job here</a></div>
+</form>
+
+</div>
+</div>
+</body>
+
+</html>
